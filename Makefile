@@ -15,7 +15,6 @@ cmake: ## init cmake (run once, or after clean)
 	fi
 	mkdir -p build
 	cd build
-	export PICO_SDK_PATH=deps/pico-sdk
 	cmake \
 		-DCMAKE_C_COMPILER=$$(which arm-none-eabi-gcc) \
 		-DCMAKE_CXX_COMPILER=$$(which arm-none-eabi-g++) ..
